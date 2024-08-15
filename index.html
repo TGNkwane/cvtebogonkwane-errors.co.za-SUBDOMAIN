@@ -19,114 +19,166 @@
                         <h1>Tebogo Gerald Nkwane</h1>
                         <h3>Innovative, Reliable, Creative</h3>
                         <p>Email: <a href="mailto: nkwane.gerald@gmail.com">nkwane.gerald@gmail.com</a></p>
-                        <p><a href="https://github.com/TGNkwane" target="_blank">GitHub</a></p>
-                        <p><a href="https://za.linkedin.com/in/tebogo-nkwane" target="_blank">LinkedIn</a></p>
-                        <p><a href="https://www.credly.com/users/tebogo-nkwane" target="_blank">Credly</a></p>
+                        <p><a href="https://github.com/TGNkwane" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                        <p><a href="https://za.linkedin.com/in/tebogo-nkwane" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                        <p><a href="https://www.credly.com/users/tebogo-nkwane" target="_blank" rel="noopener noreferrer">Credly</a></p>
                     </div>
+                     <h2>Professional Experience</h2>
+                     <ul>
+                        <li>
+                            <h3 class="headline">Intermediate  Software Engineer at Dariel: April 2024 -  Present</h4>
+                            <p class="headline">Consulting through Dariel at Standard Bank as a Backend Engineer: Digital Platforms - Engagment & Entrenchment</p>
+                            <p>Evolving the in-app messaging system (in-app messaging and push notifications) architecture:</p>
+                            <ul>
+                                <li>Aligning the system with BIAN standards for improved banking industry compliance and efficiency.</li>
+                                <li>Implementing cloud cost optimization strategies while ensuring system resilience and self-healing capabilities.</li>
+                                <li>Designing and building more event-driven architectures using AWS SQS queues, EventBridge, and DynamoDB for increased scalability and responsiveness.</li>
+                            </ul>
+                            <p>Enhancing system performance and reliability:</p>
+                            <ul>
+                                <li>Implemented a Redis cache (AWS Elasticache) to handle high volumes of user logins (1 billion+ in 2023), ensuring service scalability and responsiveness (some of our services are now being called on login).</li>
+                                <li>Externalized configurations using a config server for improved maintainability and deployment flexibility.</li>
+                                <li>Focused on monitoring key AWS metrics and implementing Telegram alerts for proactive issue detection and resolution.</li>
+                                <li>Developed Bamboo specs for "deployment as code," streamlining the deployment process and reducing manual errors.</li>
+                                <li>Java21 Migration for all services</li>
+                            </ul>
+                            <p>Improved observability and data management:</p>
+                            <ul>
+                                <li>Created Kibana dashboards to visualize and analyze service business logic, enabling faster identification and resolution of issues even with successful HTTP responses.</li>
+                                <li>Designed and implemented an archiving strategy for 'MyUpdates' message data, leveraging PostgreSQL partitioning and S3 offloading for efficient storage and access via Athena and Quicksight.</li>
+                            </ul>
+                            <p>Optimized development processes and workflows:</p>
+                            <ul>
+                                <li>Working with the team on improved Jira workflows to better track work progress and identify bottlenecks, contributing to improved team efficiency.</li>
+                                <li>Working with the team on DORA metrics to measure and enhance software delivery performance, focusing on key areas like deployment frequency, lead time for changes, and change failure rate.</li>
+                            </ul>
+                            <p><b>Core languages, frameworks and tools:</b> Java, Springboot, Redis, PostgreSQL, Docker, AWS, Grafana, Prometheus, MELK(kibana, elastic search), AppDynamics, Splunk, Jmeter, K6.js, Jira, Confluence, Bitbucket, Bamboo, Gitlab, Intellij, VSCode, C#, Visual Studio, DBeaver, plantUML, WSL</p>
+                            <p><b>Toolbox:</b> Design Patterns, Domain Driven Design, BIAN, TOGAF, SOLID, UML</p>
+                        </li>
+                        <li>
+                            <h3 class="headline">Junior Software Engineer at Dariel: October 2022 - April 2024</h4>
+                            <p class="headline">Consulting through Dariel at Standard Bank as a Backend Engineer: Digital Platforms - Engagment & Entrenchment</p>
+                            <p>Contributed to the development, architecture, and enhancement of microservices for Standard Bank's mobile app (Explore, Help Center, Message Centre), driving customer engagement.</p>
+                            <p>Played a key role in the cloud migration journey:</p>
+                            <ul>
+                                <li>Migrated data from an on-prem DB2 database to a PostgreSQL RDS instance, improving performance and scalability.</li>
+                                <li>Introduced DynamoDB for message templates, enabling faster access and flexible data management.</li>
+                                <li>Successfully transitioned transactional notifications from SMS to in-app messages with push notifications (MyUpdates feature).</li>
+                            </ul>
+                            <p>Implemented performance testing and optimization:</p>
+                            <ul>
+                                <li>Incorporated k6.js and JMeter for load testing, ensuring high service availability under heavy traffic.</li>
+                                <li>Optimized database queries and indexes to enhance read performance and responsiveness.</li>
+                                <li>Introduced SQS queues to handle spikes in traffic during month-end debit orders and transactions, improving system resilience.</li>
+                            </ul>
+                            <p>Modernized the architecture:</p>
+                            <ul>
+                                <li>Decoupled functionality from the monolithic WildFly gateway into independent microservices. Upgraded services from Java8 to Java11 and then to Java17 with springboot 3.x</li>
+                                <li>Adopted Spring Cloud Gateway for improved routing and API management.</li>
+                            </ul>
+                            <p>Prioritized system reliability and performance:</p>
+                            <ul>
+                                <li>Established and monitored error budgets to proactively identify and address potential issues.</li>
+                                <li>Took ownership of the push notification system, transitioning from an internal API to a self-managed service, ensuring better control and reliability.</li>
+                                <li>Exposed the push notification service to other teams via API Connect, fostering collaboration and reusability.</li>
+                            </ul>
+                            <p>Delivered impactful features that drove business value:</p>
+                            <ul>
+                                <li>Launched 'MyUpdates' in December 2023, resulting in 50+ million in-app messages per month peaking at 3+ million daily. In South Africa only, other countries on the way.</li>
+                                <li>Introduced personalized recommendations to the inbox, further boosting customer engagement.</li>
+                                <li>These features contributed to increased customer retention, product upsell, and significant cost savings by reducing reliance on SMS providers as well as revenue generation due to SMS charges.</li>
+                            </ul>
+                            <p><b>Core languages, frameworks and tools:</b> Java, Springboot, PostgreSQL, Docker, AWS, Grafana, Prometheus, MELK(kibana, elastic search), AppDynamics, API Connect, Splunk, Jmeter, K6.js, Jira, Confluence, Bitbucket, Bamboo, Gitlab, Intellij, VSCode, C#, Visual Studio, DBeaver, plantUML</p>
+                        </li>
+                        <li>
+                            <h3 class="headline">Graduate Software Engineer at Dariel: February 2022 -  October 2022</h4>
+                            <p class="headline">Consulting through Dariel at Standard Bank as a Backend Engineer: Help Center and Messaging</p>
+                            <p>Worked on a complex backend architecture involving:</p>
+                            <ul>
+                                <li>A monolithic J2EE (WildFly) gateway handling core business logic.</li>
+                                <li>Spring Boot microservices for recommendations and messaging features.</li>
+                            </ul>
+                            <p>Actively participated in the cloud migration journey (on-prem to AWS), focusing on lift-and-shift strategy for applications:</p>	
+                            <ul>
+                                <li>Assisted with system upgrades, cloud configurations, and deployment plans (bamboo).</li>
+                                <li>Contributed to ensuring cloud readiness and addressing potential migration challenges.</li>
+                                <li>Gained valuable experience in cloud technologies and large-scale system transitions.</li>
+                            </ul>
+                            <p class="headline">Also Consulting through Dariel at Wotif part time in this period</p>
+                            <p>Implemented a scalable solution using ASP.NET Core (dotnet 6) backend with a MySQL database, coupled with an Angular 14 frontend.</p>
+                            <p>This system has streamlined the organization's workflow, for the programmes they manage, allowing them to allocate more resources directly to the community.</p>
+                        </li>
+                     </ul>
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>
+                            <h4>Technical Skills</h4>
+                            <ul>
+                                <li>
+                                    <strong>Backend:</strong> Java (OOP, AOP, Spring Boot, J2EE (WildFly)), C# (ASP.NET Core), Node.js, Firebase, Python
+                                </li>
+                                <li>
+                                    <strong>Frontend:</strong> HTML5, CSS3, JavaScript, Angular, React (Minor)
+                                </li>
+                                <li>
+                                    <strong>Databases:</strong> PostgreSQL, DynamoDB, MySQL, DB2
+                                </li>
+                                <li>
+                                    <strong>Cloud:</strong> AWS (Certified Developer), Azure (Fundametals)
+                                </li>
+                                <li>
+                                    <strong>DevOps & CI/CD:</strong> Docker, Bitbucket, Bamboo, GitLab, Checkmarx, Nexus, Deployment as Code (Spec), Maven, CloudFormation
+                                </li>
+                                <li>
+                                    <strong>Testing & QA:</strong> JUnit, Mockito, WireMock, Spring Integration tests, JMeter, k6.js, SonarQube
+                                </li>
+                                <li>
+                                    <strong>Monitoring & Observability:</strong> AppDynamics, ELK Stack (Elasticsearch, Logstash, Kibana), Grafana, Prometheus, Telegram  
+                                </li>
+                                <li>
+                                    <strong>Other Tools:</strong> IntelliJ, Visual Studio, VSCode, DBeaver, PlantUML, Postman, Bash, Git, Jira, Confluence, Bitbucket, WSL
+                                </li>
+                                <li>
+                                    <strong>Architecture & Design:</strong> Design Patterns, Domain-Driven Design (DDD), BIAN, TOGAF, SOLID, UML
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Soft Skills</h4>
+                            <ul>
+                                <li>Leadership & Mentoring</li>
+                                <li>Effective Communication (cross-functional, all levels)</li>
+                                <li>Adaptability & Rapid Learning</li>
+                                <li>Accountability & Ownership</li>
+                                <li>Problem-Solving & Critical Thinking</li>
+                                <li>Collaboration & Teamwork</li>
+                            </ul>
+                        </li>
+                    </ul>
                     <h3>Education</h3>
                     <ul>
                         <li>
                             <p class="headline">Belgium Campus: 2019 - 2022</p>
-                            <p>Majoring in Software Engineering</p>
-                            <p>GPA: 78%</p>
+                            <p>Bachelor Of Computing in Software Engineering</p>
                         </li>
                         <li>
                             <p class="headline">University of Cape Town: 2016 - 2018</p>
-                            <p>Majored in Mechanical and Mechatronic Engineering</p>
-                            <p>Discovered this was not the type of Engineering for me, therefore degree incomplete.</p>
-                        </li>
-                    </ul>
-                     <h3>Work Experience</h3>
-                     <ul>
-                         <li>
-                            <p class="headline">Intermediate  Software Engineer at Dariel: April 2024 -  Present</p>
-                            <p class="headline">Backend Engineer at Standard Bank: Digital Platforms - Engagment & Entrenchment (Consulting Through Dariel)</p>
-                            <p>Promoted to Intermediate Software Engineer, continuing work with Standard Bank.</p>
-                            <p>Currenlty evolving the in-app messaging system (in app messgaing and push notificaitons) architecture to align with BIAN, looking at cloud cost optimization while ensuring systems are resiliant and self-healing. Also working on creating more event driven architectures using AWS SQS queues, event bridge and DynamoDB</p>
-                            <p>My daily process involves agile ceremonies, drawing up the relevant diagram(s) for the problem at hand, write the code (+ some docs), build, test and push the docker image conainting changes, deploy to test environment(s), extensive performance testing when necessary, overall system analysis and feedback plus planning for faster production release cycles.</p>
-                            <p><b>Core languages, frameworks and tools:</b> Java, Springboot, PostgreSQL, Docker, AWS, Grafana, Prometheus, MELK(kibana, elastic search), AppDynamics, Splunk, Jmeter, K6.js, Jira, Confluence, Bitbucket, Bamboo, Gitlab, Intellij, VSCode, C#, Visual Studio, DBeaver, plantUML, WSL</p>
-                            <p><b>Toolbox:</b> Design Patterns, Domain Driven Design, BIAN, TOGAF, SOLID, UML</p>
-                        </li>
-                        <li>
-                            <p class="headline">Junior Software Engineer at Dariel: October 2022 -  Present</p>
-                            <p class="headline">Backend Engineer at Standard Bank: Digital Platforms - Engagment & Entrenchment (Consulting Through Dariel)</p>
-                            <p>Progressed from Graduate to Junior Software Engineer.</p>
-                            <p>Working on the development, architecture and enhancements of microservices implemented in spring boot alongside a gateway utilizing J2EE (WildFly). In my role I service the backend components of the Standardbank App: Explore, Help Center and Message Centre sections. My team is responsible for the customer enagement experience on the standard bank website and mobile app. Features include: live chats/messaging, help cards, customer recommendations in explore, atm/branch locator and a messaging system that allows internal teams to communicate with customers as well as recive customer communication.</p>
-                            <p>Successfully completed the migration from on-premises infrastructure to AWS, and focused on optimizing cloud-based operations for peak efficiency.</p>
-                            <p><b>Core languages, frameworks and tools:</b> Java, Springboot, PostgreSQL, Docker, AWS, Grafana, Prometheus, MELK(kibana, elastic search), AppDynamics, Splunk, Jmeter, K6.js, Jira, Confluence, Bitbucket, Bamboo, Gitlab, Intellij, VSCode, C#, Visual Studio, DBeaver, plantUML</p>
-                        </li>
-                        <li>
-                            <p class="headline">Graduate Software Engineer at Dariel: February 2022 -  October 2022</p>
-                            <p class="headline">Graduate Backend Engineer at Standard Bank: Help Center and Messaging (Consulting Through Dariel)</p>
-                            <p>Joined as a Graduate Software Engineer.</p>
-                            <p>Working on microservices written in spring boot and gateways written in J2EE (WildFly). Help center and Messaging is responsible for the customer experience on the standard bank website and mobile app. Features/services include: live chats/messaging, help cards, customer recommendations in explore, atm/branch locator and a messaging system that allows internal systems to communicate with each other and the customers.</p>
-                            <p>Migrating from on-prem to AWS.</p>
-                            <p class="headline">Consulting at Wotif</p>
-                            <p>Building a system to help the non-profit organization with tasks relevant to the needs of the people of Diepsloot.</p>
-                            <p>ASP.NET Core using dotnet 6 backend connecting to MySQL database and Angular 14 frontend, the idea is to be build a very secure and robust system that is still cost effective.</p>
-                        </li>
-                     </ul>
-                    <ul>
-                        <li>
-                            <p class="headline">Psybergate: Vacation Student (2021 July)</p>
-                            <p>As a vacation student at Psybergate in July 2021, I participated in mentoring sessions focused on software development, including Object Oriented Programming (OOP), system design using Java, Postgres, SQL, and JUnit testing. Working under the guidance of Psybergate Developers and the Technical Director, I collaborated on building a Tax Calculator while gaining valuable insights into the software development field.</p>
-                        </li>
-                    </ul>
-                    <h3>Leadership and Awards</h3>
-                    <ul>
-                        <li>
-                            <p class="headline">Belgium Campus Geekulcha Student Society (BC-GKSS)</p>
-                            <p>Various roles since 2021, currently involved for support.</p>
-                        </li>
-                        <li>
-                            <p class="headline">Tutoring and Mentoring</p>
-                            <p>Various companies, tutoring Maths and Physical Science: 2016 - Present.</p>
-                        </li>
-                        <li>
-                            <p class="headline">Bain and Company</p>
-                            <p>BEL Program: 2018</p>
-                            <p>Building entrepreneurial leadership (BEL) program. A program where I was introduced to the management 
-                                consulting world where we also learned about how this field ties with entrepreneurship. A lesson I took 
-                                from this experience is that the culture of an organisation influences its success.</p>
-                        </li>   
-                    </ul>
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>
-                            <h4>Development</h4>
-                            <p><strong>Backend:</strong> Java (OOP, AOP), Springboot, J2EE (Wildfly), C# (ASP.NET/Core), Node.js, Firebase, Python</p>
-                            <p><strong>Frontend:</strong> HTML5, CSS3, EJS, JS, Angular, Minor React</p>
-                            <p><strong>Database:</strong> PostgreSQL, DynamoDB, MySQL, DB2</p>
-                            <p><strong>Testing:</strong> JUnit, Mockito, WireMock, Spring Integration tests</p>
-                            <p><strong>Cloud:</strong> AWS, Azure [AWS Certified Developer]</p>
-                            <p><strong>Critical IDEs:</strong> IntelliJ, Visual Studio, Notepad++</p>
-                            <p><strong>Build and Ship Tools:</strong> Maven, Jira, Confluence, Bamboo, Bitbucket, Gitlab, SonarQube, Postman, bash, Nexus, Checkmarx, Docker, plantUML</p>
-                            <p><strong>Monitoring, Alerting & Escalation:</strong>AppDynamics, MELK, Grafana, Prometheus, Telegram</p>
-                            <p><strong>Other Tools:</strong>GitHub, Blender, Lens Studio, SparkAR, Draw.io, Canva, P5.js, Various Microsoft Software</p>
-                        </li>
-                        <li>
-                            <p class="headline">Other Skills</p>
-                            <p>Leading/Mentoring teams, efficient communication with people of various age groups and titles.</p>
-                            <p>Adaptability, Communication, Applied and rapid learning, Accountability, Perseverance.</p>
+                            <p>BScENG Mechanical and Mechatronic Engineering</p>
                         </li>
                     </ul>
                     <h3>Selected Hackathon Experience</h3>
                     <ul>
                         <li>
                             <p class="headline">Standard Bank Group Annual Hackathon 2023</p>
-                            <p>Achieved 3rd place in the banks' global hackathon with more than 300 participants from across the entire group around the world. The competition introduced me to the various challenges faced in the finacial sector acroess the world, showcasing expertise and innovation on a larger scale.</p>
+                            <p>Achieved 3rd place out of 300+ participants globally. Showcased expertise and innovation in addressing financial sector challenges.</p>
                         </li>                        
                         <li>
                             <p class="headline">ARVR Africa Hackathon</p>
-                            <p>Won second place in December 2020, the hackathon was sponsored by Facebook, my team 
-                                developed snapchat and facebook(including instagram) filters to help teach the public about south African sign language as well help those who already 
-                                know it improve.</p>
+                            <p>Won 2nd place. Developed Snapchat and Facebook filters to promote South African Sign Language learning and fluency.</p>
                         </li>
                         <li>
                             <p class="headline">gkHack 2021</p>
-                            <p>Reached the Top 10, the solution was to create a machine learning 
-                                algorithm to help detect minor illnesses and diseases, the interface used to interact with this model was via a 
-                                USSD because this solution was focused for rural areas.</p>
+                            <p>Reached the Top 10. Created a machine learning model for detecting minor illnesses, accessible via USSD for rural areas.</p>
                         </li>
                     </ul>
                 </div>
