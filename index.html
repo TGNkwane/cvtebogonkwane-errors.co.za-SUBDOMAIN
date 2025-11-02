@@ -4,7 +4,7 @@
         <title>Tebogo Nkwane: CV</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Hind' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="../css/cv.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/cv.css"/>
         <link rel="apple-touch-icon" sizes="180x180" href="../vendors/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../vendors/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../vendors/favicon/favicon-16x16.png">
@@ -36,24 +36,25 @@
                             </ul>
                             <p>Enhancing system performance and reliability:</p>
                             <ul>
-                                <li>Implemented a Redis cache (AWS Elasticache) to handle high volumes of user logins (1 billion+ in 2023), ensuring service scalability and responsiveness (some of our services are now being called on login).</li>
-                                <li>Externalized configurations using a config server for improved maintainability and deployment flexibility.</li>
-                                <li>Focused on monitoring key AWS metrics and implementing Telegram alerts for proactive issue detection and resolution.</li>
-                                <li>Developed Bamboo specs for "deployment as code," streamlining the deployment process and reducing manual errors.</li>
-                                <li>Java21 Migration for all services</li>
+                                <li>Implemented Redis cache (AWS Elasticache) supporting the <strong>2B+ annual user logins</strong>, ensuring sub-second response times and service scalability. Maintained <strong>99%+ SRE availability</strong> across all services.</li>
+                                <li>Migrated all services to Java21 with externalized configurations via config server, improving maintainability and deployment flexibility.</li>
+                                <li>Using Spring webflux for reactive programming in high concurrency services, ensuring smooth operation under heavy load and efficient resource utilization.</li>
+                                <li>Developed Bamboo specs for "deployment as code" and implemented Telegram alerts for proactive monitoring of key AWS metrics.</li>
                             </ul>
-                            <p>Improved observability and data management:</p>
+                            <p>Data management and analytics infrastructure:</p>
                             <ul>
-                                <li>Created Kibana dashboards to visualize and analyze service business logic, enabling faster identification and resolution of issues even with successful HTTP responses.</li>
-                                <li>Designed and implemented an archiving strategy for 'MyUpdates' message data, leveraging PostgreSQL partitioning and S3 offloading for efficient storage and access via Athena and Quicksight.</li>
+                                <li>Built AWS Glue archiving workflow processing <strong>50/60M+ rows per monthly partition</strong>, reducing active PostgreSQL database footprint using pg_partman. Maintained accessibility via Athena and QuickSight.</li>
+                                <li>Architected data harvest workflow using Lambda to collect daily statistics from PostgreSQL and Elasticsearch (<strong>700M+ transactions monthly</strong>), storing in S3 with QuickSight SPICE for self-service analytics. Enabled YTD, MTD, and year-over-year trend analysis.</li>
+                                <li>Migrating from RDS PostgreSQL to DynamoDB with DynamoDB Streams for real-time analytics, reducing data latency from batch (daily) to streaming (seconds).</li>
+                                <li>Created Kibana dashboards for service business logic visualization, enabling faster issue resolution.</li>
                             </ul>
-                            <p>Optimized development processes and workflows:</p>
+                            <p>Platform expansion and architecture patterns:</p>
                             <ul>
-                                <li>Working with the team on improved Jira workflows to better track work progress and identify bottlenecks, contributing to improved team efficiency.</li>
-                                <li>Working with the team on DORA metrics to measure and enhance software delivery performance, focusing on key areas like deployment frequency, lead time for changes, and change failure rate.</li>
+                                <li>Leading MyUpdates expansion across Africa (<strong>88M+ messages monthly</strong>, 3M+ daily peak), onboarding multiple countries, reducing cossts and creating new revenue streams.</li>
+                                <li>Designed internal web application pattern using ALB + S3 (frontend) + Lambda (service layer) for secure, cost-efficient internal traffic.</li>
                             </ul>
-                            <p><b>Core languages, frameworks and tools:</b> Java, Springboot, Redis, PostgreSQL, Docker, AWS, Grafana, Prometheus, MELK(kibana, elastic search), AppDynamics, Splunk, Jmeter, K6.js, Jira, Confluence, Bitbucket, Bamboo, Gitlab, Intellij, VSCode, C#, Visual Studio, DBeaver, plantUML, WSL</p>
-                            <p><b>Toolbox:</b> Design Patterns, Domain Driven Design, BIAN, TOGAF, SOLID, UML</p>
+                            <p><b>Core technologies:</b> Upgrading to Java25, Java21, Springboot, Redis, PostgreSQL (pg_partman), DynamoDB, AWS (Lambda, Glue, Athena, QuickSight, S3, SQS, EventBridge, DynamoDB Streams, ALB), Grafana, Prometheus, ELK Stack, AppDynamics, K6.js, Bamboo, Python</p>
+                            <p><b>Practices:</b> BIAN, TOGAF, SOLID, DDD, DORA metrics, Error Budgets</p>
                         </li>
                         <li>
                             <h3 class="headline">Junior Software Engineer at Dariel: October 2022 - April 2024</h4>
@@ -124,7 +125,7 @@
                                     <strong>Databases:</strong> PostgreSQL (pg_partman), DynamoDB, MySQL, DB2
                                 </li>
                                 <li>
-                                    <strong>Cloud:</strong> AWS (Certified Developer - Lambda, Glue, Athena, QuickSight, S3, SQS, EventBridge, RDS, DynamoDB, ALB, CloudFormation), Azure (Fundametals)
+                                    <strong>Cloud:</strong> AWS (Certified Developer - Lambda, Glue, Athena, QuickSight, S3, SQS, EventBridge, RDS, DynamoDB, DynamoDB Streams, ALB, CloudFormation), Azure (Fundamentals)
                                 </li>
                                 <li>
                                     <strong>DevOps & CI/CD:</strong> Docker, Bitbucket, Bamboo, GitLab, Checkmarx, Nexus, Deployment as Code (Spec), Maven, CloudFormation
